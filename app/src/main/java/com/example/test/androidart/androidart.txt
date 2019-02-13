@@ -1,0 +1,130 @@
+x,y 相对于父容器的坐标（位移会改变它的值）
+left,top 相对于父容器的坐标（位移不会改变它的值）
+translationX,translationY 相对于父容器的偏移量
+rawX,rawY 相对于屏幕的坐标
+scrollX,scrollY    View  内容的移动，
+         （view的scrollTo或scrollBy方法，view本身不会移动，只会移动view的内容。）
+
+
+问题，注意：
+getDefaultSize方法和之后相关的问题，处理方法（wrap_content，padding）
+方式的选择
+
+
+DecorView 的MeasureSpec由窗口的尺寸和其自身的LayoutParams来共同决定
+普通View的MeasureSpec由父容器的MeasureSpec和自身的LayoutParams一起决定
+    还和View的margin和padding有关
+MeasureSpec确定后，onMeasure中就可以确定View的测量宽/高
+
+
+自定义View学习的点：
+1.常见的回调方法
+    构造方法。onAttach。onVisibilityChanged。onDetach。onMeasure。onLayout。onDraw...
+2.View滑动(滑动冲突)
+分类：
+    1.直接继承自View
+    2.直接继承自ViewGroup
+    3.继承现有的系统控件
+
+
+onMeasure相关：-------------------------------------------------------------------------
+（三大流程中最复杂的一个。
+    确定View的测量宽/高）
+1.UNSPECIFIED--
+这个模式主要用于系统内部多次Measure的情形，一般来说，我们不需要关注此模式
+
+2.EXACTLY--精确
+View的最终大小就是SpecSize所指定的值
+对应LayoutParams的match_parent和具体数值这两种模式
+
+3.AT_MOST--最大化
+父容器给了上限SpecSize
+对应于LayoutParams的wrap_content
+
+
+子元素可用大小为父容器的尺寸减去padding(一般不用处理，除非自定义view有特殊要求，下面的逻辑和平常见到子view和父view的大小的逻辑是一样的)
+表4-1重要！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+当View采用固定宽高，不管父容器的MeasureSpec是什么，View的MeasureSpec都是精确模式并且其大小遵循Layoutparams中的大小
+当View的宽/高是match_parent时，如果父容器是精确模式，那么View也是精确模式并且大小是父容器的剩余空间
+当View的宽/高是wrap_content时，不管父容器是精准还是最大化，View的模式总是最大化，
+        并且大小不能超过父容器的剩余空间
+
+从表4-1 可以看出，只要提供父容器的MeasureSpec就可以进一步确定出，子元素测量后的大小。
+    这个表格是getChildMeasureSpec方法的表格形式呈现
+
+
+
+如果只是一个继承原始的View，那么通过measure方法就完成了其测量过程
+1.需要重写onMeasure方法并且设置wrap_content时的自身大小，否则在布局使用wrap_content和match_parent一样
+    有固定的代码
+
+如果是继承一个ViewGroup，那么还要遍历去调用子元素的measure方法。
+抽象类，需要子类去实现自己的onMeasure方法
+
+
+
+View的measure方法不是和Activity的生命周期同步的，有可能获取的宽/高，是0
+解决方法：
+1.onWindowFocusChanged（View已经初始化完毕了，高宽准备好）里获取
+    注意：该方法的调用可能会比较频繁，得到焦点和失去都会被调用。
+2.view.post(runnable)
+    (将runnable投递到消息队列的尾部，然后等待Looper调用此runnable的时候，View也已经初始化好了)
+3.ViewTreeObserver的很多接口可以完成这个功能，例如：OnGlobalLayoutListener
+4.view.measure(int widthMeasureSpec,int heightMeasureSpec) 手动获取
+    但也要分情况
+    1.match_parent  不能测量出View的大小
+    2.具体数值  具体见书 192
+    3.wrap_content  数192
+
+
+
+onLayout相关：--------------------------------------------------------------------------
+（View的最终大小在这里确定，但是几乎所有情况下View的测量大小和最终大小是相等的。
+    确定View的最终宽/高和四个顶点的位置）
+在这里获取View的测量宽/高或者最终宽/高，是一个比较好的习惯
+
+
+
+
+onDraw相关：----------------------------------------------------------------------------
+（将View绘制到屏幕上）
+步骤：
+1.绘制背景 background.draw(canvas)
+2.绘制自己 onDraw
+3.绘制children dispatchDraw
+4.绘制装饰 onDrawScrollBars
+
+---------------------------------------------------------------------------------------
+自定义View的分类：
+1.继承View重写onDraw方法
+    实现不规则的效果，不方便通过布局组合的方式达到
+    需要自己支持wrap_content，并且padding也需要自己处理
+    (知道了，这种情况会出现这种问题，知道固定的处理方法。但是对于原因不是很清晰？？？？？？？？？》？？？？？？？？？？？？？？)
+
+2.继承ViewGroup派生的Layout（参考LinearLayout的源码分析）
+    用于自定义的布局，即除了LinearLayout等系统的布局外，重新定义一种新布局。
+    用于某种效果看起来很像几种View组合在一起的时候，稍微复杂一些
+    需要合适地处理ViewGroup的测量和布局两个过程
+
+3.继承特定的View（如：TextView）
+    用于扩展某种已有的功能
+    比较常见，比较容易实现。
+    不需要自己支持wrap_content和padding等
+
+4.继承特定的ViewGroup（如：LinearLayout）
+    比较常见
+    看起来像几种View组合在一起时，可以采用
+    不需要自己处理ViewGroup的测量和布局
+    一般来说，方法2能实现的效果，方法4都能实现，
+    主要差别在于方法2更接近于View的底层
+
+    比较流式布局，线性布局...
+    child.measure(childWidthMeasureSpec, childHeightMeasureSpec);什么时候直接用父布局的，什么时候需要自己计算
+     setMeasuredDimension(）；同上
+     流式布局里onmeasure，好几个for会不会重复，onlayout步骤和onmeasure差不多，会不会重复
+
+
+
+书中还有东西，我并没有整理下来
+
+以后看自定义的时候，注意各个view 是不是处理了需要处理的方法，以及怎么处理的

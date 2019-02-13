@@ -1,0 +1,28 @@
+看过的自定义view：幸运转盘，轮播图等等
+
+
+
+
+下面的链接作为参考：
+http://blog.csdn.net/lmj623565791/article/details/24252901/
+调用顺序：
+	http://blog.csdn.net/oqihaogongyuan/article/details/50921560
+	http://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650238405&idx=1&sn=16f2696e4c7b3a7630ed6c010c8f400f&chksm=88639caabf1415bc2bcb323ed39be642c256b8784566043e6635a5ed0ac885de50830714ccb4&mpshare=1&scene=23&srcid=012116yTAhGrG6h6023Ccmbt#rd
+
+
+总结
+1，获取属性方式有几种
+	context.obtainStyledAttributes(attrs, R.styleable.CustomTitleView, defStyle, 0); 
+	String content = attrs.getAttributeValue("http://schemas.android.com/apk/res/com.example.ydlmobileguard", "content");
+
+
+
+
+记录：
+1，TypedArray.recycle();  
+
+
+
+
+hencoder  UI：
+1.

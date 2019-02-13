@@ -1,0 +1,26 @@
+测试结果：
+1.不知道为什么，dispatchevent里面没有可执行的代码，他的执行顺序就会比以前晚
+
+经验，注意点：
+1.临界条件是谁就在谁里面来判断。(在内部就在内部判断，在外部就在外部判断)
+2.先外后内。(内部拦截也需要外部先拦截出action_down以外的事件，具体看书”艺术“)
+
+action_down里面好像不建议拦截事件
+
+
+http://www.jianshu.com/p/e99b5e8bd67b
+1.dispatchTouchEvent和 onTouchEvent的框里有个【true---->消费】的字，表示的意思是如果方法返回true，
+    那么代表事件就此消费，不会继续往别的地方传了，事件终止。
+2.之前图中的Activity 的dispatchTouchEvent 有误（图已修复），只有return super.dispatchTouchEvent(ev) 才是往下走，
+    返回true 或者 false 事件就被消费了（终止传递）。
+
+
+
+
+
+dispatchtoucheevent  true消费的意思，是事件给了同一级的ontouchevent，还是其他的
+被确定消费后，接下里的move，up事件传递顺序，测试是与down相反的。
+好比down是1，2，3。在3被消费，则move就是3，2，1
+down的dispatchevent事件都是最后调用的？？
+
+

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_item.xml",
+        "source": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\src\\main\\res\\drawable\\selector_item.xml"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_group.xml",
+        "source": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\src\\main\\res\\drawable\\selector_group.xml"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\res\\merged\\debug\\drawable\\child_bg.xml",
+        "source": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\src\\main\\res\\drawable\\child_bg.xml"
+    }
+]

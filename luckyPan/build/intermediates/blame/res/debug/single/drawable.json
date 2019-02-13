@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable\\hit_backgroud.xml",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable\\hit_backgroud.xml"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable\\text_background.xml",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable\\text_background.xml"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable\\rule_background.xml",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable\\rule_background.xml"
+    }
+]

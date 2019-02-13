@@ -1,0 +1,4 @@
+#Wed Feb 13 19:59:41 CST 2019
+base.0=E\:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=E\:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

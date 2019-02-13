@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\shan.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\shan.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\iphone.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\iphone.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\background.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\background.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\yun.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\yun.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\xiaomi.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\xiaomi.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\macbook.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\macbook.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\node.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\node.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\huawei.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\huawei.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\image_one.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\image_one.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\meizu.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-hdpi\\meizu.png"
+    }
+]

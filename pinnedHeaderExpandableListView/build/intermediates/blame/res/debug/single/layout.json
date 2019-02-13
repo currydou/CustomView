@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\res\\merged\\debug\\layout\\child.xml",
+        "source": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\src\\main\\res\\layout\\child.xml"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\build\\intermediates\\res\\merged\\debug\\layout\\group.xml",
+        "source": "E:\\Code\\me\\CustomView\\pinnedHeaderExpandableListView\\src\\main\\res\\layout\\group.xml"
+    }
+]

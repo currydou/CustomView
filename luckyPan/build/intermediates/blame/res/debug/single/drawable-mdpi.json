@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\iphone.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\iphone.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\meizu.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\meizu.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\shan.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\shan.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\background.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\background.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\node.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\node.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\macbook.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\macbook.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\image_one.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\image_one.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\huawei.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\huawei.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\xiaomi.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\xiaomi.png"
+    },
+    {
+        "merged": "E:\\Code\\me\\CustomView\\luckyPan\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\yun.png",
+        "source": "E:\\Code\\me\\CustomView\\luckyPan\\src\\main\\res\\drawable-mdpi\\yun.png"
+    }
+]
